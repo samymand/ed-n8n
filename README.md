@@ -35,7 +35,7 @@ Chaque push sur `main` déclenche `.github/workflows/deploy.yml`, qui copie le s
    ```bash
    gh secret set SSH_HOST        --env production --body "serveur.exemple.com"
    gh secret set SSH_USER        --env production --body "utilisateur"
-   gh secret set DEPLOY_PATH     --env production --body "/var/www/flow.echodigitale.com"
+   gh secret set DEPLOY_PATH     --env production --body "/var/www/flow.echodigitale.com/public"
    gh secret set SSH_PRIVATE_KEY --env production < ~/.ssh/ed-n8n-deploy
    gh secret set SSH_PORT        --env production --body "22"   # facultatif
    ssh-keyscan -H serveur.exemple.com | gh secret set SSH_KNOWN_HOSTS --env production   # recommandé
