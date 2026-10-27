@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Echo Flow — Automatisations n8n sur mesure pour les PME | Echo Digitale</title>
+  <meta name="description" content="Echo Flow, l'offre d'automatisation sur mesure d'Echo Digitale : nous connectons vos outils (WhatsApp, Mobile Money, Excel, CRM, comptabilité) avec n8n pour faire gagner du temps aux PME du Cameroun et d'Afrique.">
+  <meta property="og:title" content="Echo Flow — Automatisations n8n sur mesure pour les PME">
+  <meta property="og:description" content="Vos tâches répétitives tournent toutes seules. Vous, vous développez votre entreprise.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CM">
+  <meta property="og:image" content="assets/img/logo-echo-digitale.png">
+  <meta name="theme-color" content="#005461">
+  <link rel="icon" type="image/png" href="assets/img/logo-echo-digitale.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Echo Flow",
+    "serviceType": "Automatisation des processus métier avec n8n",
+    "provider": { "@type": "Organization", "name": "Echo Digitale SAS", "slogan": "Faire résonner votre transformation" },
+    "areaServed": ["Cameroun", "Afrique centrale", "Afrique de l'Ouest"],
+    "availableLanguage": ["fr", "en"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Echo Flow par Echo Digitale — accueil">
+        <img src="assets/img/logo-echo-digitale.png" alt="Echo Digitale" width="202" height="210">
+        <span class="brand__product"><strong>Echo Flow</strong><span>Automatisation n8n</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu"><span></span></button>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <a href="#solution">La solution</a>
+        <a href="#cas-usage">Cas d'usage</a>
+        <a href="#offres">Offres</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--primary" href="contact.html">Diagnostic gratuit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <span class="eyebrow">Echo Flow · par Echo Digitale</span>
+          <h1>Vos tâches répétitives tournent <span class="text-gradient">toutes seules</span>.<br>Vous, vous développez votre entreprise.</h1>
+          <p class="hero__lead">Echo Flow conçoit, installe et maintient des automatisations sur mesure basées sur <strong>n8n</strong>. Nous connectons WhatsApp, Mobile Money, Excel, votre CRM et votre comptabilité pour que l'information circule sans ressaisie, sans oubli, et sans erreur.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="contact.html?offre=diagnostic">
+              Demander un diagnostic gratuit
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#cas-usage">Voir les cas d'usage</a>
+          </div>
+          <ul class="hero__badges">
+            <li>Pensé pour les PME africaines</li>
+            <li>Support en français &amp; en anglais</li>
+            <li>Devis en FCFA</li>
+          </ul>
+        </div>
+
+        <div class="flow-card" role="img" aria-label="Illustration d'un workflow : un paiement Mobile Money reçu déclenche automatiquement une facture et un message WhatsApp au client.">
+          <div class="flow-card__bar">
+            <div class="flow-card__dots"><i></i><i></i><i></i></div>
+            <span class="flow-card__title">Workflow · Encaissement</span>
+            <span class="flow-card__status">Actif</span>
+          </div>
+          <svg viewBox="0 0 520 290" aria-hidden="true">
+            <defs>
+              <linearGradient id="g-line" x1="0" x2="1">
+                <stop offset="0" stop-color="#00A5AC"/>
+                <stop offset="1" stop-color="#7DB159"/>
+              </linearGradient>
+            </defs>
+            <!-- liaisons -->
+            <path class="flow-line" d="M138 145 H198" stroke="url(#g-line)" stroke-width="3" fill="none"/>
+            <path class="flow-line" d="M322 145 C352 145 352 70 382 70" stroke="url(#g-line)" stroke-width="3" fill="none"/>
+            <path class="flow-line" d="M322 145 C352 145 352 220 382 220" stroke="url(#g-line)" stroke-width="3" fill="none"/>
+            <!-- nœud 1 -->
+            <g>
+              <rect x="16" y="112" width="122" height="66" rx="14" fill="#fff" stroke="#DFE7E7"/>
+              <rect x="28" y="128" width="34" height="34" rx="10" fill="#005461"/>
+              <path d="M37 145h16M45 137v16" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+              <text x="70" y="141" font-family="Nunito Sans, sans-serif" font-size="12" font-weight="800" fill="#005461">Paiement</text>
+              <text x="70" y="157" font-family="Nunito Sans, sans-serif" font-size="11" fill="#4D5B5E">Mobile Money</text>
+              <circle cx="138" cy="145" r="5" fill="#00A5AC"/>
+            </g>
+            <!-- nœud 2 -->
+            <g>
+              <rect x="200" y="112" width="122" height="66" rx="14" fill="#fff" stroke="#DFE7E7"/>
+              <rect x="212" y="128" width="34" height="34" rx="10" fill="#00A5AC"/>
+              <path d="M220 145l5 5 9-10" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="254" y="141" font-family="Nunito Sans, sans-serif" font-size="12" font-weight="800" fill="#005461">Vérifier</text>
+              <text x="254" y="157" font-family="Nunito Sans, sans-serif" font-size="11" fill="#4D5B5E">du montant</text>
+              <circle cx="200" cy="145" r="5" fill="#00A5AC"/>
+              <circle cx="322" cy="145" r="5" fill="#2F9F91"/>
+            </g>
+            <!-- nœud 3 -->
+            <g>
+              <rect x="384" y="37" width="122" height="66" rx="14" fill="#fff" stroke="#DFE7E7"/>
+              <rect x="396" y="53" width="34" height="34" rx="10" fill="#2F9F91"/>
+              <path d="M406 60h10l5 5v15h-15z" stroke="#fff" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+              <text x="438" y="66" font-family="Nunito Sans, sans-serif" font-size="12" font-weight="800" fill="#005461">Facture</text>
+              <text x="438" y="82" font-family="Nunito Sans, sans-serif" font-size="11" fill="#4D5B5E">en PDF</text>
+              <circle cx="384" cy="70" r="5" fill="#2F9F91"/>
+            </g>
+            <!-- nœud 4 -->
+            <g>
+              <rect x="384" y="187" width="122" height="66" rx="14" fill="#fff" stroke="#DFE7E7"/>
+              <rect x="396" y="203" width="34" height="34" rx="10" fill="#7DB159"/>
+              <path d="M404 212h18v12h-11l-5 4v-4h-2z" stroke="#fff" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+              <text x="438" y="216" font-family="Nunito Sans, sans-serif" font-size="12" font-weight="800" fill="#005461">WhatsApp</text>
+              <text x="438" y="232" font-family="Nunito Sans, sans-serif" font-size="11" fill="#4D5B5E">au client</text>
+              <circle cx="384" cy="220" r="5" fill="#7DB159"/>
+            </g>
+          </svg>
+          <div class="flow-card__log" aria-hidden="true">
+            <div><b>Paiement reçu · 25 000 FCFA</b><span>✓ traité</span></div>
+            <div><b>Facture envoyée au client</b><span>✓ en 3 s</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONSTAT ============ -->
+    <section class="section section--alt" aria-labelledby="constat-titre">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Le constat</span>
+          <h2 id="constat-titre">Votre équipe passe trop de temps à faire le travail d'un logiciel</h2>
+          <p>Dans beaucoup de PME, l'information voyage encore à la main : d'un message WhatsApp vers un cahier, d'un cahier vers Excel, d'Excel vers la comptabilité. Chaque étape coûte du temps et ouvre la porte à l'erreur.</p>
+        </div>
+        <div class="pain-grid">
+          <article class="pain reveal">
+            <div class="pain__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+            <h3>Saisies en double</h3>
+            <p>Les mêmes commandes, clients et paiements sont recopiés dans plusieurs fichiers et logiciels.</p>
+          </article>
+          <article class="pain reveal">
+            <div class="pain__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <h3>Relances oubliées</h3>
+            <p>Les factures impayées et les prospects non rappelés s'accumulent faute de suivi systématique.</p>
+          </article>
+          <article class="pain reveal">
+            <div class="pain__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></svg></div>
+            <h3>Mobile Money à rapprocher</h3>
+            <p>Retrouver qui a payé quoi parmi des dizaines de SMS de transaction prend des heures chaque semaine.</p>
+          </article>
+          <article class="pain reveal">
+            <div class="pain__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+            <h3>Pilotage à l'aveugle</h3>
+            <p>Les chiffres du jour arrivent en fin de mois, quand il est trop tard pour réagir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOLUTION ============ -->
+    <section class="section" id="solution" aria-labelledby="solution-titre">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">La solution Echo Flow</span>
+          <h2 id="solution-titre">Des automatisations <span class="text-gradient">sur mesure</span>, construites autour de votre façon de travailler</h2>
+          <p>n8n est une plateforme d'automatisation professionnelle utilisée dans le monde entier. Elle relie vos applications entre elles et exécute vos processus 24 h/24, sans intervention humaine. Echo Flow, c'est notre savoir-faire pour la mettre au service de votre entreprise, clé en main.</p>
+          <ul class="checklist">
+            <li><span><strong>Sur mesure, pas « prêt-à-porter ».</strong> Nous partons de vos processus réels, de vos outils actuels et de vos contraintes terrain.</span></li>
+            <li><span><strong>Vos données restent maîtrisées.</strong> n8n peut être installé sur un serveur dédié à votre entreprise, plutôt que sur une plateforme partagée.</span></li>
+            <li><span><strong>Des coûts prévisibles.</strong> Pas de facturation à chaque tâche exécutée : vous automatisez sans surveiller un compteur.</span></li>
+            <li><span><strong>Robuste face aux aléas.</strong> Les traitements tournent sur un serveur, pas sur un poste de travail : une coupure de courant au bureau n'arrête pas vos workflows.</span></li>
+            <li><span><strong>Vous restez autonomes.</strong> Documentation en français, formation de vos équipes et support réactif.</span></li>
+          </ul>
+        </div>
+        <div class="pillars reveal" aria-label="Les points forts d'Echo Flow">
+          <div class="pillar"><b>24 h/24</b><span>Vos workflows travaillent pendant que vous dormez.</span></div>
+          <div class="pillar"><b>Zéro ressaisie</b><span>Une information saisie une fois circule partout.</span></div>
+          <div class="pillar"><b>IA intégrée</b><span>Tri des e-mails, lecture de factures, réponses assistées.</span></div>
+          <div class="pillar"><b>100 % suivi</b><span>Chaque exécution est tracée et surveillée.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAS D'USAGE ============ -->
+    <section class="section section--alt" id="cas-usage" aria-labelledby="cas-titre">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Cas d'usage</span>
+          <h2 id="cas-titre">Ce que nous automatisons pour les PME</h2>
+          <p>Quelques exemples concrets. Chaque projet est adapté à votre secteur : commerce, distribution, services, santé, éducation, BTP, logistique, agro-industrie…</p>
+        </div>
+        <div class="cases">
+          <article class="case reveal">
+            <span class="case__tag">Recouvrement</span>
+            <h3>Relances de factures automatiques</h3>
+            <p>Rappels courtois envoyés par WhatsApp, SMS ou e-mail avant et après l'échéance, avec arrêt automatique dès que le paiement est enregistré.</p>
+            <div class="case__flow">Facture <i>→</i> Échéance <i>→</i> Relance WhatsApp <i>→</i> Suivi</div>
+          </article>
+          <article class="case reveal">
+            <span class="case__tag">Encaissements</span>
+            <h3>Rapprochement Mobile Money</h3>
+            <p>Les paiements MTN MoMo et Orange Money sont identifiés, associés à la bonne facture et reportés dans votre suivi, via les API officielles ou votre agrégateur de paiement.</p>
+            <div class="case__flow">Paiement <i>→</i> Client identifié <i>→</i> Facture soldée <i>→</i> Reçu</div>
+          </article>
+          <article class="case reveal">
+            <span class="case__tag">Commercial</span>
+            <h3>Prospects captés et suivis</h3>
+            <p>Les demandes venues de Facebook, Instagram, WhatsApp ou de votre site sont centralisées dans un CRM, attribuées à un commercial et relancées au bon moment.</p>
+            <div class="case__flow">Formulaire <i>→</i> CRM <i>→</i> Alerte commercial <i>→</i> Relance J+2</div>
+          </article>
+          <article class="case reveal">
+            <span class="case__tag">Pilotage</span>
+            <h3>Le rapport du jour sur votre téléphone</h3>
+            <p>Chaque matin, ventes, encaissements, stocks critiques et impayés vous sont résumés dans un message clair, sans ouvrir un seul fichier.</p>
+            <div class="case__flow">Données <i>→</i> Synthèse <i>→</i> WhatsApp à 7 h</div>
+          </article>
+          <article class="case reveal">
+            <span class="case__tag">Stocks &amp; achats</span>
+            <h3>Alertes de stock et commandes fournisseurs</h3>
+            <p>Dès qu'un article passe sous son seuil, une alerte part et un bon de commande pré-rempli est préparé pour validation.</p>
+            <div class="case__flow">Stock bas <i>→</i> Alerte <i>→</i> Bon de commande <i>→</i> Validation</div>
+          </article>
+          <article class="case reveal">
+            <span class="case__tag">Administratif &amp; IA</span>
+            <h3>Documents traités par l'IA</h3>
+            <p>Factures fournisseurs, bons de livraison et e-mails sont lus, classés et extraits automatiquement, puis transmis au bon service.</p>
+            <div class="case__flow">E-mail reçu <i>→</i> Lecture IA <i>→</i> Classement <i>→</i> Compta</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTÉGRATIONS ============ -->
+    <section class="section" aria-labelledby="integrations-titre">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Connecteurs</span>
+          <h2 id="integrations-titre">Nous connectons les outils que vous utilisez déjà</h2>
+          <p>Pas besoin de tout changer. n8n dispose de centaines d'intégrations prêtes à l'emploi, et tout logiciel doté d'une API peut être relié.</p>
+        </div>
+        <ul class="integrations reveal">
+          <li>WhatsApp Business</li>
+          <li>MTN Mobile Money</li>
+          <li>Orange Money</li>
+          <li>Excel &amp; Google Sheets</li>
+          <li>Gmail &amp; Outlook</li>
+          <li>Google Workspace</li>
+          <li>Microsoft 365</li>
+          <li>Facebook &amp; Instagram</li>
+          <li>Odoo &amp; ERP</li>
+          <li>CRM (HubSpot, Pipedrive…)</li>
+          <li>Logiciels comptables</li>
+          <li>SMS</li>
+          <li>Bases de données</li>
+          <li>IA (OpenAI, Claude, Mistral…)</li>
+          <li>Votre logiciel métier via API</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ MÉTHODE ============ -->
+    <section class="section section--alt" id="methode" aria-labelledby="methode-titre">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Notre méthode</span>
+          <h2 id="methode-titre">Quatre étapes, un interlocuteur unique</h2>
+          <p>Nous avançons par petites victoires : un premier workflow utile rapidement, puis des améliorations successives.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Diagnostic</h3>
+            <p>Un échange pour cartographier vos processus, repérer les tâches répétitives et chiffrer le temps qu'elles vous coûtent.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Conception</h3>
+            <p>Nous vous proposons un plan d'automatisation priorisé, avec un devis clair en FCFA et un calendrier réaliste.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">3</span>
+            <h3>Déploiement</h3>
+            <p>Installation de n8n, développement et tests de vos workflows sur vos données réelles, puis mise en production.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">4</span>
+            <h3>Formation &amp; suivi</h3>
+            <p>Vos équipes sont formées, la documentation est remise, et nous surveillons le bon fonctionnement dans la durée.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OFFRES ============ -->
+    <section class="section" id="offres" aria-labelledby="offres-titre">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Nos offres</span>
+          <h2 id="offres-titre">Une formule pour chaque étape de votre transformation</h2>
+          <p>Tous nos tarifs sont établis sur devis, en FCFA, selon le nombre et la complexité des processus à automatiser.</p>
+        </div>
+        <div class="offers">
+          <article class="offer reveal">
+            <span class="offer__kicker">Pour démarrer</span>
+            <h3>Diagnostic</h3>
+            <p class="offer__desc">Identifier où l'automatisation vous fera gagner le plus.</p>
+            <p class="offer__price">Offert</p>
+            <ul>
+              <li>Entretien d'analyse (sur site à Douala/Yaoundé ou en visio)</li>
+              <li>Cartographie de 2 à 3 processus clés</li>
+              <li>Estimation du temps gagné</li>
+              <li>Recommandations priorisées</li>
+            </ul>
+            <a class="btn btn--ghost" href="contact.html?offre=diagnostic">Réserver mon diagnostic</a>
+          </article>
+          <article class="offer offer--featured reveal">
+            <span class="offer__ribbon">Le plus demandé</span>
+            <span class="offer__kicker">Pour automatiser</span>
+            <h3>Projet sur mesure</h3>
+            <p class="offer__desc">La conception et la mise en service de vos workflows.</p>
+            <p class="offer__price">Forfait sur devis</p>
+            <ul>
+              <li>Installation et sécurisation de n8n</li>
+              <li>Développement des workflows convenus</li>
+              <li>Tests sur vos données réelles</li>
+              <li>Formation de vos utilisateurs</li>
+              <li>Documentation en français</li>
+              <li>Garantie de bon fonctionnement</li>
+            </ul>
+            <a class="btn btn--primary" href="contact.html?offre=projet">Démarrer un projet</a>
+          </article>
+          <article class="offer reveal">
+            <span class="offer__kicker">Pour durer</span>
+            <h3>Accompagnement</h3>
+            <p class="offer__desc">Un partenaire qui veille sur vos automatisations.</p>
+            <p class="offer__price">Abonnement mensuel</p>
+            <ul>
+              <li>Hébergement, sauvegardes et mises à jour</li>
+              <li>Surveillance et alertes en cas d'erreur</li>
+              <li>Support prioritaire (WhatsApp, e-mail)</li>
+              <li>Crédit d'heures pour de nouvelles évolutions</li>
+              <li>Point de suivi périodique</li>
+            </ul>
+            <a class="btn btn--ghost" href="contact.html?offre=accompagnement">En savoir plus</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VALEURS SPIRE ============ -->
+    <section class="section section--alt" aria-labelledby="valeurs-titre">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Nos engagements</span>
+          <h2 id="valeurs-titre">SPIRE : nos valeurs, appliquées à vos automatisations</h2>
+        </div>
+        <div class="spire">
+          <div class="spire__item reveal"><span class="spire__letter">S</span><h3>Simplicité</h3><p>Des workflows lisibles, documentés, que vos équipes comprennent.</p></div>
+          <div class="spire__item reveal"><span class="spire__letter">P</span><h3>Proximité</h3><p>Un interlocuteur qui connaît les réalités des entreprises locales.</p></div>
+          <div class="spire__item reveal"><span class="spire__letter">I</span><h3>Impact</h3><p>Nous automatisons d'abord ce qui vous rapporte le plus.</p></div>
+          <div class="spire__item reveal"><span class="spire__letter">R</span><h3>Rigueur</h3><p>Tests, sécurité des accès et traçabilité de chaque exécution.</p></div>
+          <div class="spire__item reveal"><span class="spire__letter">E</span><h3>Efficacité</h3><p>Des résultats mesurables, livrés dans des délais tenus.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-titre">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Questions fréquentes</span>
+          <h2 id="faq-titre">Vous vous demandez peut-être…</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Faut-il avoir des compétences techniques pour utiliser Echo Flow ?</summary>
+            <p>Non. Nous prenons en charge la conception, l'installation et la maintenance. Vos équipes continuent d'utiliser leurs outils habituels ; elles sont simplement formées à suivre les automatisations et à réagir aux alertes.</p>
+          </details>
+          <details>
+            <summary>Que se passe-t-il en cas de coupure d'internet ou d'électricité chez nous ?</summary>
+            <p>Vos workflows s'exécutent sur un serveur, pas sur un ordinateur de votre bureau. Ils continuent donc de fonctionner. Lorsqu'un service tiers est momentanément indisponible, nous prévoyons des reprises automatiques et des alertes pour qu'aucune opération ne soit perdue.</p>
+          </details>
+          <details>
+            <summary>Où sont stockées mes données ?</summary>
+            <p>Nous définissons ensemble l'hébergement le plus adapté : serveur dédié à votre entreprise, sur votre propre infrastructure ou chez un hébergeur choisi d'un commun accord. Les accès sont sécurisés et limités, conformément à notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+          </details>
+          <details>
+            <summary>En combien de temps un premier workflow est-il opérationnel ?</summary>
+            <p>Cela dépend de la complexité et de l'accès aux outils à connecter. Un workflow simple peut être mis en service en quelques jours ; un projet plus complet se déploie en quelques semaines, par étapes. Le calendrier précis figure dans chaque devis.</p>
+          </details>
+          <details>
+            <summary>Pourquoi n8n plutôt qu'un autre outil d'automatisation ?</summary>
+            <p>n8n peut être auto-hébergé, ce qui permet de garder la maîtrise de vos données et d'éviter une facturation à chaque tâche exécutée. Il gère aussi des logiques avancées (conditions, boucles, IA, code) indispensables aux processus réels des entreprises.</p>
+          </details>
+          <details>
+            <summary>Pouvez-vous travailler avec notre logiciel de gestion actuel ?</summary>
+            <p>Très probablement. Si votre logiciel propose une API, un export de fichiers ou une base de données accessible, nous pouvons le connecter. Le diagnostic gratuit sert justement à le vérifier.</p>
+          </details>
+          <details>
+            <summary>Intervenez-vous hors du Cameroun ?</summary>
+            <p>Oui. Nous accompagnons en priorité les entreprises du Cameroun, et intervenons à distance pour les PME d'Afrique centrale, d'Afrique de l'Ouest et au-delà, en français comme en anglais.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section" style="padding-top:0" aria-labelledby="cta-titre">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2 id="cta-titre">Combien d'heures pourriez-vous récupérer chaque semaine ?</h2>
+            <p>Parlons de vos processus pendant 45 minutes. Vous repartez avec des pistes concrètes, que vous travailliez avec nous ou non.</p>
+          </div>
+          <div class="cta-band__actions">
+            <a class="btn btn--light" href="contact.html?offre=diagnostic">Demander mon diagnostic gratuit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-logo" href="index.html"><img src="assets/img/logo-echo-digitale.png" alt="Echo Digitale" width="202" height="210" loading="lazy"></a>
+          <p class="footer-tagline">Faire résonner votre transformation.</p>
+          <p>Echo Flow est l'offre d'automatisation des processus d'Echo Digitale SAS.</p>
+        </div>
+        <div>
+          <h4>Echo Flow</h4>
+          <ul>
+            <li><a href="index.html#solution">La solution</a></li>
+            <li><a href="index.html#cas-usage">Cas d'usage</a></li>
+            <li><a href="index.html#offres">Offres</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
+            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Formulaire de contact</a></li>
+            <li><a href="mailto:flow@echodigitale.com">flow@echodigitale.com</a></li>
+            <li><a href="tel:+237695522330">+237 6 95 52 23 30</a></li>
+            <li>Douala, Cameroun</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Echo Digitale SAS. Tous droits réservés. n8n est une marque de n8n GmbH ; Echo Digitale est un intégrateur indépendant.</span>
+        <span class="footer-values" aria-label="Nos valeurs : Simplicité, Proximité, Impact, Rigueur, Efficacité"><b>S</b> <b>P</b> <b>I</b> <b>R</b> <b>E</b></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/237695522330?text=Bonjour%20Echo%20Digitale%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20Echo%20Flow." target="_blank" rel="noopener" aria-label="Nous écrire sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/><path d="M9 10h.01M12 10h.01M15 10h.01"/></svg>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Echo Flow | Echo Digitale</title>
+  <meta name="description" content="Contactez Echo Digitale pour un diagnostic gratuit de vos processus et un projet d'automatisation n8n sur mesure. Réponse sous 24 h ouvrées.">
+  <meta name="theme-color" content="#005461">
+  <link rel="icon" type="image/png" href="assets/img/logo-echo-digitale.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Echo Flow par Echo Digitale — accueil">
+        <img src="assets/img/logo-echo-digitale.png" alt="Echo Digitale" width="202" height="210">
+        <span class="brand__product"><strong>Echo Flow</strong><span>Automatisation n8n</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu"><span></span></button>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <a href="index.html#solution">La solution</a>
+        <a href="index.html#cas-usage">Cas d'usage</a>
+        <a href="index.html#offres">Offres</a>
+        <a href="index.html#faq">FAQ</a>
+        <a class="btn btn--primary" href="contact.html" aria-current="page">Diagnostic gratuit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> / Contact</nav>
+        <h1>Parlons de vos processus</h1>
+        <p>Décrivez-nous en quelques lignes ce qui vous prend du temps. Nous revenons vers vous sous 24 h ouvrées pour planifier votre diagnostic gratuit.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <div class="form-card">
+          <!--
+            data-endpoint : URL du webhook n8n (nœud « Webhook », méthode POST) qui reçoit les demandes.
+            Tant qu'elle contient « VOTRE-INSTANCE », le formulaire ouvre la messagerie de l'internaute.
+          -->
+          <form id="contact-form" novalidate
+                data-endpoint="https://VOTRE-INSTANCE.n8n.cloud/webhook/echo-flow-contact"
+                data-fallback-email="flow@echodigitale.com">
+            <div class="form-grid">
+              <div class="field">
+                <label for="nom">Nom et prénom *</label>
+                <input id="nom" name="nom" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="entreprise">Entreprise *</label>
+                <input id="entreprise" name="entreprise" type="text" autocomplete="organization" required>
+              </div>
+              <div class="field">
+                <label for="email">E-mail professionnel *</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="telephone">Téléphone / WhatsApp *</label>
+                <input id="telephone" name="telephone" type="tel" autocomplete="tel" placeholder="+237 6XX XX XX XX" required pattern="^\+?[0-9\s.\-]{8,20}$">
+              </div>
+              <div class="field">
+                <label for="ville">Ville et pays</label>
+                <input id="ville" name="ville" type="text" placeholder="Douala, Cameroun">
+              </div>
+              <div class="field">
+                <label for="taille">Taille de l'entreprise</label>
+                <select id="taille" name="taille">
+                  <option value="">Sélectionnez</option>
+                  <option>1 à 9 personnes</option>
+                  <option>10 à 49 personnes</option>
+                  <option>50 à 249 personnes</option>
+                  <option>250 personnes et plus</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="secteur">Secteur d'activité</label>
+                <select id="secteur" name="secteur">
+                  <option value="">Sélectionnez</option>
+                  <option>Commerce &amp; distribution</option>
+                  <option>Services aux entreprises</option>
+                  <option>Santé</option>
+                  <option>Éducation &amp; formation</option>
+                  <option>BTP &amp; immobilier</option>
+                  <option>Transport &amp; logistique</option>
+                  <option>Agro-industrie</option>
+                  <option>Hôtellerie &amp; restauration</option>
+                  <option>Finance &amp; microfinance</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="besoin">Votre besoin *</label>
+                <select id="besoin" name="besoin" required>
+                  <option value="diagnostic">Diagnostic gratuit</option>
+                  <option value="projet">Projet d'automatisation sur mesure</option>
+                  <option value="accompagnement">Accompagnement / maintenance</option>
+                  <option value="autre">Autre question</option>
+                </select>
+              </div>
+              <fieldset class="field full" style="border:0;padding:0;margin:0">
+                <legend style="font-weight:800;font-size:.9rem;color:var(--ed-petrole);margin-bottom:8px">Outils que vous utilisez <small style="font-weight:600;color:var(--ed-taupe)">(facultatif)</small></legend>
+                <div class="checks">
+                  <label><input type="checkbox" name="outils" value="WhatsApp Business"> WhatsApp Business</label>
+                  <label><input type="checkbox" name="outils" value="Mobile Money"> Mobile Money</label>
+                  <label><input type="checkbox" name="outils" value="Excel / Google Sheets"> Excel / Sheets</label>
+                  <label><input type="checkbox" name="outils" value="Logiciel comptable"> Logiciel comptable</label>
+                  <label><input type="checkbox" name="outils" value="CRM"> CRM</label>
+                  <label><input type="checkbox" name="outils" value="ERP / Odoo"> ERP / Odoo</label>
+                  <label><input type="checkbox" name="outils" value="Réseaux sociaux"> Réseaux sociaux</label>
+                </div>
+              </fieldset>
+              <div class="field full">
+                <label for="message">Décrivez votre besoin * <small>— quelles tâches aimeriez-vous ne plus faire à la main ?</small></label>
+                <textarea id="message" name="message" required minlength="20" placeholder="Ex. : nous recopions chaque jour les commandes reçues sur WhatsApp dans Excel, puis nous relançons les clients qui n'ont pas payé…"></textarea>
+              </div>
+              <div class="hp" aria-hidden="true">
+                <label for="site_web">Ne pas remplir</label>
+                <input id="site_web" name="site_web" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <label class="consent full">
+                <input type="checkbox" name="consentement" required>
+                <span>J'accepte qu'Echo Digitale utilise ces informations pour répondre à ma demande, conformément à la <a href="confidentialite.html">politique de confidentialité</a>. *</span>
+              </label>
+              <div class="full">
+                <button class="btn btn--primary" type="submit">Envoyer ma demande</button>
+              </div>
+            </div>
+            <div class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="contact-aside">
+          <div class="info-card">
+            <h3>Nous joindre directement</h3>
+            <ul class="info-list">
+              <li>
+                <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg></span>
+                <div><small>WhatsApp</small><a href="https://wa.me/237695522330" target="_blank" rel="noopener">+237 6 95 52 23 30</a></div>
+              </li>
+              <li>
+                <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+                <div><small>Téléphone</small><a href="tel:+237695522330">+237 6 95 52 23 30</a></div>
+              </li>
+              <li>
+                <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+                <div><small>E-mail</small><a href="mailto:flow@echodigitale.com">flow@echodigitale.com</a></div>
+              </li>
+              <li>
+                <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                <div><small>Bureaux</small><span>Douala, Cameroun</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-card info-card--dark">
+            <h3>Ce qui se passe ensuite</h3>
+            <p><strong>1.</strong> Nous vous recontactons sous 24 h ouvrées.<br>
+               <strong>2.</strong> Nous fixons ensemble un créneau de diagnostic (45 min, en visio ou sur site).<br>
+               <strong>3.</strong> Vous recevez une synthèse et des recommandations, sans engagement.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Horaires</h3>
+            <p style="margin:0;color:var(--text-soft)">Du lundi au vendredi, de 8 h à 18 h (heure de Douala, UTC+1).<br>Le samedi sur rendez-vous.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-logo" href="index.html"><img src="assets/img/logo-echo-digitale.png" alt="Echo Digitale" width="202" height="210" loading="lazy"></a>
+          <p class="footer-tagline">Faire résonner votre transformation.</p>
+          <p>Echo Flow est l'offre d'automatisation des processus d'Echo Digitale SAS.</p>
+        </div>
+        <div>
+          <h4>Echo Flow</h4>
+          <ul>
+            <li><a href="index.html#solution">La solution</a></li>
+            <li><a href="index.html#cas-usage">Cas d'usage</a></li>
+            <li><a href="index.html#offres">Offres</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
+            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Formulaire de contact</a></li>
+            <li><a href="mailto:flow@echodigitale.com">flow@echodigitale.com</a></li>
+            <li><a href="tel:+237695522330">+237 6 95 52 23 30</a></li>
+            <li>Douala, Cameroun</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Echo Digitale SAS. Tous droits réservés. n8n est une marque de n8n GmbH ; Echo Digitale est un intégrateur indépendant.</span>
+        <span class="footer-values" aria-label="Nos valeurs : Simplicité, Proximité, Impact, Rigueur, Efficacité"><b>S</b> <b>P</b> <b>I</b> <b>R</b> <b>E</b></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
