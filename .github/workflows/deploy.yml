@@ -38,7 +38,7 @@ jobs:
 
       - name: Récupérer le code
         if: steps.config.outputs.ready == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Préparer la clé SSH
         if: steps.config.outputs.ready == 'true'
